@@ -1,0 +1,166 @@
+body {
+    padding-top: 80px;
+    background: linear-gradient(135deg, #9b5de5, #f15bb5);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Main Container */
+.series-container {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.series-container h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Series Grid */
+.series-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Series Cards */
+.series {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.series:hover {
+    transform: scale(1.05);
+}
+
+.series img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.series h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: black;
+}
+
+.series p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+form input, form button, select {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+form input {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+form button {
+    background: #fc4fff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+form button:hover {
+    background: #ff90e8;
+    transform: scale(1.05);
+}
+
+/* Dropdown */
+select {
+    background-color: #d291ff;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+select:hover {
+    transform: scale(1.05);
+}
+
+/* Status Button */
+.toggle-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #d291ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.toggle-status:hover {
+    background: #b06cff;
+    transform: scale(1.05);
+}
+
+/* Episode Update */
+.update-episode {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #d291ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.update-episode:hover {
+    background: #b06cff;
+    transform: scale(1.05);
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed white;
+    width: 100%;
+    margin: 20px auto;
+    opacity: 0.8;
+}

@@ -1,0 +1,185 @@
+body {
+    padding-top: 80px;
+    background: linear-gradient(135deg, #9b5de5, #f15bb5);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Floating Hearts Animation */
+@keyframes floatingHearts {
+    0% { transform: translateY(0); opacity: 0.8; }
+    50% { transform: translateY(-20px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.8; }
+}
+
+.heart-deco {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ff90e8;
+    opacity: 0.7;
+    animation: floatingHearts 3s infinite ease-in-out;
+}
+
+.heart-1 { top: 10%; left: 10%; animation-duration: 4s; }
+.heart-2 { top: 20%; right: 15%; animation-duration: 5s; }
+.heart-3 { bottom: 15%; left: 20%; animation-duration: 3.5s; }
+.heart-4 { bottom: 10%; right: 10%; animation-duration: 4.5s; }
+
+/* Love Notes Container */
+.love-notes-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.love-notes-container:hover {
+    transform: scale(1.02);
+}
+
+textarea:hover {
+    transform: scale(1.02);
+}
+
+/* Header */
+h2 {
+    margin-top: 5px;
+    font-size: 2rem;
+    margin-bottom: 15px; /* Ensures spacing below */
+    padding-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 100%; /* Ensures it aligns properly */
+}
+
+select:hover {
+    transform: scale(1.02);
+}
+
+select {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: #d291ff;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style dropdown options */
+select option {
+    background: white;
+    color: black;
+}
+
+/* Love Note Text Area */
+.love-notes-container textarea {
+    transition: transform 0.3s ease-in-out;
+    width: 80%;
+    max-width: 10in;
+    padding: 15px;
+    height: 180px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    resize: none;
+    background: plum;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Romantic Button */
+.love-notes-container button {
+    display: block;
+    margin: 20px auto;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    background: #fc4fff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(252, 79, 255, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.love-notes-container button:hover {
+    background: #ff90e8;
+    box-shadow: 0 0 15px rgba(252, 79, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Notes List */
+.notes-list {
+    margin-top: 20px;
+}
+
+/* Individual Love Note */
+.note {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.note:hover {
+    transform: scale(1.02);
+}
+
+/* Note Details */
+.sender {
+    color: black;
+    font-weight: bold;
+}
+
+.message {
+    color: black;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.timestamp {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed white;
+    width: 100%;
+    margin: 20px auto;
+    opacity: 0.8;
+}

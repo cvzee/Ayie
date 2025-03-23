@@ -1,0 +1,161 @@
+body {
+    padding-top: 80px;
+    margin: 0;
+    background: linear-gradient(135deg, #9b5de5, #f15bb5);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Floating Hearts Animation */
+@keyframes floatingHearts {
+    0% { transform: translateY(0); opacity: 0.8; }
+    50% { transform: translateY(-20px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.8; }
+}
+
+.heart-deco {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ff90e8;
+    opacity: 0.7;
+    animation: floatingHearts 3s infinite ease-in-out;
+}
+
+.heart-1 { top: 10%; left: 10%; animation-duration: 4s; }
+.heart-2 { top: 20%; right: 15%; animation-duration: 5s; }
+.heart-3 { bottom: 15%; left: 20%; animation-duration: 3.5s; }
+.heart-4 { bottom: 10%; right: 10%; animation-duration: 4.5s; }
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Decorative Header */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Romantic Buttons */
+.add {
+    display: inline-block;
+    background: #ff42e9;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(255, 66, 233, 0.8);
+}
+
+.add:hover {
+    background: #ff90e8;
+    box-shadow: 0 0 15px rgba(255, 66, 233, 1);
+    transform: scale(1.05);
+}
+
+/* Input Fields */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* Centered Map */
+#map {
+    max-height: 3in;
+    width: 80%;  /* Increase width to make it look better */
+    max-width: 600px; /* Prevent it from becoming too large on big screens */
+    margin: 20px auto; /* Centers it properly */
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#map:hover {
+    transform: scale(1.02);
+}
+
+/* Popups */
+.leaflet-popup-content {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.leaflet-popup img {
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.8);
+}

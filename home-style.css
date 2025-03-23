@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px;
+    background: linear-gradient(135deg, #9b5de5, #f15bb5);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 10in;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.container p {
+    font-size: 40px;
+}
+
+.nextMonthsary {
+    font-size: 1in;
+    font-weight: bold;
+    color: #ffccf9;
+}
+
+/* Countdown */
+#countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-circle {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid white; /* Hollow circle effect */
+    background: transparent;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.countdown-label {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Colon Styling */
+.colon {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 10px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
